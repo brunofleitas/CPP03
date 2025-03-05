@@ -6,7 +6,7 @@
 /*   By: bfleitas <bfleitas@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 18:22:59 by bfleitas          #+#    #+#             */
-/*   Updated: 2025/02/20 22:55:20 by bfleitas         ###   ########.fr       */
+/*   Updated: 2025/02/22 02:21:25 by bfleitas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ ScavTrap::ScavTrap()
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
-    m_hitpoints = 100;
-    m_energy_points = 50;
-    m_attack_damage = 20;
+    m_hitpoints = m_inicialHitPoints;
+    m_energy_points = m_inicitalEnergyPoints;
+    m_attack_damage = m_inicialAttackDamage;
     std::cout << "ScavTrap " << m_name << " was created." << std::endl;
 }
 
